@@ -63,14 +63,51 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_0kmVcBw9EeeXsNY9kQHi3A" name="worldId">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_5UE8UBw9EeeXsNY9kQHi3A" name="creatorPlayerId" visibility="public"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Lkrl4Bw-EeeXsNY9kQHi3A" name="size" visibility="public"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_OuDKkBw-EeeXsNY9kQHi3A" name="type" visibility="public"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_P1HgUBw-EeeXsNY9kQHi3A" name="resources"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5UE8UBw9EeeXsNY9kQHi3A" name="creatorPlayerId" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Lkrl4Bw-EeeXsNY9kQHi3A" name="size" visibility="public" type="_G-wHIBw_Eeec4cRfXmHMqQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OuDKkBw-EeeXsNY9kQHi3A" name="type" visibility="public" type="_RTcDABw_Eeec4cRfXmHMqQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_P1HgUBw-EeeXsNY9kQHi3A" name="resources" type="_MPmgQBxAEeec4cRfXmHMqQ"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_XlfFUBw-EeeXsNY9kQHi3A" name="create"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_X-wg8Bw-EeeXsNY9kQHi3A" name="delete"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Yp8zABw-EeeXsNY9kQHi3A" name="load"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_azw_MBw-EeeXsNY9kQHi3A" name="readDetails"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_biS5IBw-EeeXsNY9kQHi3A" name="invitePlayer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_G-wHIBw_Eeec4cRfXmHMqQ" name="WorldSize">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_JQwmABw_Eeec4cRfXmHMqQ" name="small"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_J9rWYBw_Eeec4cRfXmHMqQ" name="medium"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_KmWf8Bw_Eeec4cRfXmHMqQ" name="large"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_LAjIoBw_Eeec4cRfXmHMqQ" name="huge"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_RTcDABw_Eeec4cRfXmHMqQ" name="WorldType">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_X75kwBw_Eeec4cRfXmHMqQ" name="survivor"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ZOUO4Bw_Eeec4cRfXmHMqQ" name="creator"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_MPmgQBxAEeec4cRfXmHMqQ" name="WorldResources">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_T7Vc4BxAEeec4cRfXmHMqQ" name="sparce"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UvHqQBxAEeec4cRfXmHMqQ" name="average"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Vq4u8BxAEeec4cRfXmHMqQ" name="rich"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_PwNDwBxBEeec4cRfXmHMqQ" client="_2S1OUBw8EeeXsNY9kQHi3A" supplier="_G-wHIBw_Eeec4cRfXmHMqQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_QWSzYBxBEeec4cRfXmHMqQ" client="_2S1OUBw8EeeXsNY9kQHi3A" supplier="_RTcDABw_Eeec4cRfXmHMqQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Q1Ck4BxBEeec4cRfXmHMqQ" client="_2S1OUBw8EeeXsNY9kQHi3A" supplier="_MPmgQBxAEeec4cRfXmHMqQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_6TDUoB2_Eeec4cRfXmHMqQ" name="Player">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ABkWoB3AEeec4cRfXmHMqQ" name="playerId"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BFqQ4B3AEeec4cRfXmHMqQ" name="playerName"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_C2y3UB3AEeec4cRfXmHMqQ" name="paymentStatus"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Dm6ssB3AEeec4cRfXmHMqQ" name="registeredDate"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FIvEwB3AEeec4cRfXmHMqQ" name="email"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RErSUB3AEeec4cRfXmHMqQ" name="creates" memberEnd="_REr5YR3AEeec4cRfXmHMqQ _REr5Yh3AEeec4cRfXmHMqQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RErSUR3AEeec4cRfXmHMqQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_REr5YB3AEeec4cRfXmHMqQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_REr5Yh3AEeec4cRfXmHMqQ" name="creatorPlayerId" type="_2S1OUBw8EeeXsNY9kQHi3A" association="_RErSUB3AEeec4cRfXmHMqQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XwH2oB3AEeec4cRfXmHMqQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XwMIEB3AEeec4cRfXmHMqQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_REr5YR3AEeec4cRfXmHMqQ" name="playerId" type="_6TDUoB2_Eeec4cRfXmHMqQ" association="_RErSUB3AEeec4cRfXmHMqQ"/>
   </packagedElement>
 </uml:Model>
