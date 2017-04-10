@@ -69,6 +69,7 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_Lkrl4Bw-EeeXsNY9kQHi3A" name="size" visibility="public" type="_G-wHIBw_Eeec4cRfXmHMqQ"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_OuDKkBw-EeeXsNY9kQHi3A" name="type" visibility="public" type="_RTcDABw_Eeec4cRfXmHMqQ"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_P1HgUBw-EeeXsNY9kQHi3A" name="resources" type="_MPmgQBxAEeec4cRfXmHMqQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_REr5YR3AEeec4cRfXmHMqQ" name="playerId" type="_6TDUoB2_Eeec4cRfXmHMqQ" association="_RErSUB3AEeec4cRfXmHMqQ"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_XlfFUBw-EeeXsNY9kQHi3A" name="create"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_X-wg8Bw-EeeXsNY9kQHi3A" name="delete"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Yp8zABw-EeeXsNY9kQHi3A" name="load"/>
@@ -94,13 +95,31 @@
   <packagedElement xmi:type="uml:Dependency" xmi:id="_QWSzYBxBEeec4cRfXmHMqQ" client="_2S1OUBw8EeeXsNY9kQHi3A" supplier="_RTcDABw_Eeec4cRfXmHMqQ"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_Q1Ck4BxBEeec4cRfXmHMqQ" client="_2S1OUBw8EeeXsNY9kQHi3A" supplier="_MPmgQBxAEeec4cRfXmHMqQ"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_6TDUoB2_Eeec4cRfXmHMqQ" name="Player">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_ABkWoB3AEeec4cRfXmHMqQ" name="playerId"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_BFqQ4B3AEeec4cRfXmHMqQ" name="playerName"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_C2y3UB3AEeec4cRfXmHMqQ" name="paymentStatus"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Dm6ssB3AEeec4cRfXmHMqQ" name="registeredDate"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_FIvEwB3AEeec4cRfXmHMqQ" name="email"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ABkWoB3AEeec4cRfXmHMqQ" name="playerId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BFqQ4B3AEeec4cRfXmHMqQ" name="playerName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_C2y3UB3AEeec4cRfXmHMqQ" name="paymentStatus" type="_i4HdwB3LEeec4cRfXmHMqQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Dm6ssB3AEeec4cRfXmHMqQ" name="registeredDate">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FIvEwB3AEeec4cRfXmHMqQ" name="email">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_A3J50B3LEeec4cRfXmHMqQ" name="create"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_CJu8AB3LEeec4cRfXmHMqQ" name="delete"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Ci2moB3LEeec4cRfXmHMqQ" name="changeEmail"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_EoJfMB3LEeec4cRfXmHMqQ" name="changeName"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FhfiAB3LEeec4cRfXmHMqQ" name="makePayment"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_HO0mgB3LEeec4cRfXmHMqQ" name="joinGame"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_HxvGUB3LEeec4cRfXmHMqQ" name="acceptInvite"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_I31LsB3LEeec4cRfXmHMqQ" name="sendInvite"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_KHvUYB3LEeec4cRfXmHMqQ" name="createWorld"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_oMCRoB3PEeec4cRfXmHMqQ" name="vaildateLogin"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_RErSUB3AEeec4cRfXmHMqQ" name="creates" memberEnd="_REr5YR3AEeec4cRfXmHMqQ _REr5Yh3AEeec4cRfXmHMqQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_RErSUB3AEeec4cRfXmHMqQ" name="created by" memberEnd="_REr5YR3AEeec4cRfXmHMqQ _REr5Yh3AEeec4cRfXmHMqQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RErSUR3AEeec4cRfXmHMqQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_REr5YB3AEeec4cRfXmHMqQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -108,6 +127,12 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XwH2oB3AEeec4cRfXmHMqQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XwMIEB3AEeec4cRfXmHMqQ" value="*"/>
     </ownedEnd>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_REr5YR3AEeec4cRfXmHMqQ" name="playerId" type="_6TDUoB2_Eeec4cRfXmHMqQ" association="_RErSUB3AEeec4cRfXmHMqQ"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_i4HdwB3LEeec4cRfXmHMqQ" name="PaymentStatus">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_kF4RYB3LEeec4cRfXmHMqQ" name="paid"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lOll4B3LEeec4cRfXmHMqQ" name="pending"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nMljoB3LEeec4cRfXmHMqQ" name="processing"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_oSKroB3LEeec4cRfXmHMqQ" name="unpaid"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_p4_fgB3LEeec4cRfXmHMqQ" client="_6TDUoB2_Eeec4cRfXmHMqQ" supplier="_i4HdwB3LEeec4cRfXmHMqQ"/>
 </uml:Model>
