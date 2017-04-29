@@ -1681,7 +1681,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z6rSUSzeEeeoaJkTay9noQ" x="42" y="930" height="42"/>
           </children>
           <element xmi:type="uml:Lifeline" href="model.uml#_YNcnQCwjEeeoaJkTay9noQ"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YNhfwSwjEeeoaJkTay9noQ" x="46" y="10" width="100" height="1017"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YNhfwSwjEeeoaJkTay9noQ" x="46" y="10" width="100" height="1019"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_ZZ7BcCwjEeeoaJkTay9noQ" type="Lifeline_Shape">
           <children xmi:type="notation:DecorationNode" xmi:id="_ZZ7BciwjEeeoaJkTay9noQ" type="Lifeline_NameLabel"/>
@@ -1718,7 +1718,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0jmTgSzeEeeoaJkTay9noQ" x="42" y="935" width="16" height="40"/>
           </children>
           <element xmi:type="uml:Lifeline" href="model.uml#_ZZ4lMCwjEeeoaJkTay9noQ"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZZ7BcSwjEeeoaJkTay9noQ" x="485" y="12" width="100" height="1015"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZZ7BcSwjEeeoaJkTay9noQ" x="485" y="12" width="100" height="1017"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_8RBUMCzIEeeoaJkTay9noQ" type="CombinedFragment_Shape">
           <children xmi:type="notation:BasicCompartment" xmi:id="_8RBUMizIEeeoaJkTay9noQ" type="CombinedFragment_SubfragmentCompartment">
@@ -1785,6 +1785,9 @@
         <children xmi:type="notation:Shape" xmi:id="_SJJ4kCzeEeeoaJkTay9noQ" type="CombinedFragment_Shape">
           <children xmi:type="notation:BasicCompartment" xmi:id="_SJJ4kizeEeeoaJkTay9noQ" type="CombinedFragment_SubfragmentCompartment">
             <children xmi:type="notation:Shape" xmi:id="_SJJ4lizeEeeoaJkTay9noQ" type="InteractionOperand_Shape">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xN5SQCz6EeeoaJkTay9noQ" source="guard.visibility">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xN5SQSz6EeeoaJkTay9noQ" key="guard.visibility" value="false"/>
+              </eAnnotations>
               <children xmi:type="notation:DecorationNode" xmi:id="_SJJ4mCzeEeeoaJkTay9noQ" type="InteractionOperand_Guard">
                 <element xmi:type="uml:InteractionConstraint" href="model.uml#_SJBVsSzeEeeoaJkTay9noQ"/>
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SJJ4mSzeEeeoaJkTay9noQ" x="5" y="5"/>
@@ -2004,7 +2007,7 @@
       <element xmi:type="uml:Message" href="model.uml#_BGGAMCzeEeeoaJkTay9noQ"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BGRmYizeEeeoaJkTay9noQ" points="[-8, 0, 413, -15]$[-416, 159, 5, 144]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BGUpsCzeEeeoaJkTay9noQ" id="(0.5,1.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BGUpsSzeEeeoaJkTay9noQ" id="(1.0,0.36814783612687774)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BGUpsSzeEeeoaJkTay9noQ" id="(1.0,0.3674033511195433)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_1XlVMCzeEeeoaJkTay9noQ" type="Message_SynchEdge" source="_z6rSUCzeEeeoaJkTay9noQ" target="_0jmTgCzeEeeoaJkTay9noQ">
       <children xmi:type="notation:DecorationNode" xmi:id="_1XlVMyzeEeeoaJkTay9noQ" type="Message_SynchNameLabel">

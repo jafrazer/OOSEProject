@@ -354,8 +354,6 @@
         <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_XU2owCzbEeeoaJkTay9noQ" name="ActionExecSpecFinish" covered="_YNcnQCwjEeeoaJkTay9noQ" execution="_fJ7i4CzAEeeoaJkTay9noQ"/>
         <guard xmi:type="uml:InteractionConstraint" xmi:id="_SJBVsSzeEeeoaJkTay9noQ">
           <specification xmi:type="uml:LiteralString" xmi:id="_SJBVsizeEeeoaJkTay9noQ" value="undefined"/>
-          <maxint xmi:type="uml:LiteralInteger" xmi:id="_SJB8wCzeEeeoaJkTay9noQ" value="1"/>
-          <minint xmi:type="uml:LiteralInteger" xmi:id="_SJBVsyzeEeeoaJkTay9noQ"/>
         </guard>
       </operand>
     </fragment>
